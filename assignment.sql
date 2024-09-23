@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS assignment;
+CREATE DATABASE assignment;
+USE assignment;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(80) NOT NULL,
+  fname VARCHAR(80) NOT NULL,
+  lname VARCHAR(80) NOT NULL,
+  email VARCHAR(80) NOT NULL,
+  rankie TINYINT NOT NULL,
+  description VARCHAR(255)
+)
